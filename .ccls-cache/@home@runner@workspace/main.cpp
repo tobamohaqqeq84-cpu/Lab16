@@ -1,6 +1,6 @@
 //toba Mohaqqeq 
 //COMSC-210
-//LAb-14 
+//LAb-16(based on lab 14)
 
 #include <iostream>
 #include <iomanip>
@@ -13,15 +13,17 @@ using namespace std;
         int blue;
 
       public:
-// these are setters
-        void setRed(int r) {red = r;}
-        void setGreen(int g) {green = g;}
-        void setBlue(int b) {blue =b;}
+       color(){
+         red =0;
+         green=0;
+         blue=0;
+       }
+color(int r, int g, int b){
+  red = r;
+  green = g;
+  b = blue;
+}
 
-// these are getters
-        int getRed() const {return red;}
-        int getGreen() const {return green;}
-        int getBlue() const {return blue;}
 
 void print() const{
   cout << "Color(R:  " << setw(3) << red << ", G: " << setw(3) << green << ", B: " << setw(3) << blue << ")" << endl;
