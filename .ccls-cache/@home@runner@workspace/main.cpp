@@ -6,23 +6,30 @@
 #include <iomanip>
 using namespace std;
 
- class color{
+    class color{
       private:
         int red;
         int green;
         int blue;
 
       public:
-       color(){
-         red =0;
-         green=0;
-         blue=0;
+        color(){
+        red =0;
+        green=0;
+        blue=0;
        }
-color(int r, int g, int b){
-  red = r;
-  green = g;
-  b = blue;
-}
+
+    color(int r, int g, int b){
+      red = r;
+      green = g;
+       b = blue;
+       } 
+
+    color(int b){
+      blue = b;
+      green =0;
+      red = 0;
+    }
 
 
 void print() const{
